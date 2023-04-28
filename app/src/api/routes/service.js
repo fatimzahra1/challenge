@@ -1,4 +1,6 @@
- const service = (req, res, next) => {
+ var request = require('request');
+
+const service = (req, res, next) => {
 	res.send('lol')
 
 }
