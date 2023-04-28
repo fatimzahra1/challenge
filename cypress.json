@@ -1,5 +1,5 @@
 {
   "env": {
-    "apiUrl": "http://host.docker.internal:3000"
+    "apiUrl": "https://infra.devskills.app/credit-data/api/1.0.0"
   }
 }

@@ -1,15 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const api_endpoints = require('../api');
+const indexRouter = require('../api/index.js');
 const app = express();
 
 app.use(bodyParser.json());
 
-app.use('/', does_method_exist, api_endpoints);
+app.use("/", indexRouter);
 
-app.get('*', (req, res) => {
-  res.status(404).send('404 Not Found');
-});
+
 
 function does_method_exist(req, res, next) {
   next();
